@@ -1,0 +1,57 @@
+<div class="grid-container" id="matrix">
+
+    <div id="titleA" style="color: black">
+        <b>Matrix A</b>
+    </div>
+    <div id="dummy">
+        <br>
+    </div>
+    <div id="titleB" style="color: black">
+        <b>Matrix B</b>
+    </div>
+    <div id="a">
+
+
+    </div>
+    <div id="center">
+
+        <button class="button" onclick="sumMatrix('add');">A + B</button>
+        <button class="button" onclick="sumMatrix('sub');">A - B</button>
+        <button class="button" onclick="multiplyMatrix();">A * B</button>
+        <button class="button" onclick="swapMatrix();">&#8644;</button>
+
+    </div>
+    <div id="b">
+
+
+    </div>
+    <div id="buttonsA">
+        <button onclick="increaseMatrix('a');">+</button>
+        <button onclick="decreaseMatrix('a');">-</button>
+        <button onclick="generateEmptyMatrix('a',3,3);">del</button>
+    </div>
+
+    <div style="color: black" id="titleResult">
+        <b>Result</b>
+    </div>
+
+    <div id="buttonsB">
+        <button onclick="increaseMatrix('b');">+</button>
+        <button onclick="decreaseMatrix('b');">-</button>
+        <button onclick="generateEmptyMatrix('b',3,3);">del</button>
+    </div>
+    <div class="result" id="c">
+    </div>
+    <div class="insert" id="buttonsResult">
+        <button onclick="insertResult('a')">insert in A</button>
+        <button onclick="insertResult('b')">insert in B</button>
+        <button onclick="generateEmptyMatrix('c',3,3);">del</button>
+    </div>
+</div>
+
+<script src="./js/calculatorScript.js"></script>
+<script>
+    generateEmptyMatrix('a', 3, 3);
+    generateEmptyMatrix('b', 3, 3);
+    generateEmptyMatrix('c', 3, 3);
+</script>
