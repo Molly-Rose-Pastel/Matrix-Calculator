@@ -1,0 +1,174 @@
+
+input[type=number] {
+	width: 85px;
+	box-sizing: content-box;
+	border: 5px thin;
+	padding: 5px 8px;
+	background-color: white;
+	opacity: 0.95;
+}
+
+input[type=number]:focus {
+	background-color: whitesmoke;
+}
+
+.grid-container {
+	display: grid;
+	overflow: auto;
+	grid-template-columns: auto auto auto;
+	grid-gap: 0px;
+	background-color: whitesmoke;
+	padding: 5px;
+	align-self: center;
+	justify-content: center;
+	border-radius: 20px;
+}
+
+.grid-container>div {
+	background-color: whitesmoke;
+	overflow: auto;
+	text-align: center;
+	padding: 5px 15px;
+}
+
+.result {
+	grid-column: 1/span 3;
+}
+
+.insert {
+	grid-column: 1/span 3;
+}
+
+.button {
+	width: 50px;
+	height: 30px;
+	padding: 0px 0px;
+	display: inline-block;
+	font-size: 12px;
+}
+
+#center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#exView {
+	grid-gap: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.matrix-image {
+		height: 768px;
+	}
+	.matrix-intro {
+		font-size: 2em;
+	}
+	ul.sidenav {
+		display: none;
+	}
+	code {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	.grid-container {
+		grid-template-columns: auto;
+		display: unset;
+	}
+	input[type=number] {
+		width: 55px;
+	}
+	#matrix {
+		display: flex;
+		flex-direction: column;
+	}
+	#titleA {
+		order: 1;
+	}
+	#a {
+		order: 2;
+	}
+	#buttonsA {
+		order: 3;
+	}
+	#titleB {
+		order: 4;
+	}
+	#b {
+		order: 5;
+	}
+	#buttonsB {
+		order: 6;
+	}
+	#dummy {
+		order: 7;
+	}
+	#center {
+		order: 8;
+		flex-direction: row;
+	}
+	#titleResult {
+		order: 9;
+	}
+	#c {
+		order: 10;
+	}
+	#buttonsResult {
+		order: 11;
+	}
+	#exView {
+		display: flex;
+		flex-direction: column;
+	}
+	#labelA {
+		order: 1;
+	}
+	#inputA {
+		order: 2;
+	}
+	#operatorA {
+		order: 3;
+	}
+	#labelB {
+		order: 4;
+	}
+	#inputB {
+		order: 5;
+	}
+	#operatorB {
+		order: 6;
+	}
+	#labelEmpty {
+		order: 7;
+	}
+	#buttonsOperator {
+		order: 8;
+	}
+	#labelResult {
+		order: 9;
+	}
+	#result {
+		order: 10;
+	}
+	#operatorResult {
+		order: 11;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	P.blocktext {
+		margin-left: 0%;
+		margin-right: 0%;
+		font-size: 1.8em;
+	}
+	ul.topnav {
+		font-size: 2.5em;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	ul.requirements {
+		margin-left: 5%;
+		margin-right: 0%;
+	}
+}
